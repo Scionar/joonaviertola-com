@@ -10,12 +10,11 @@ export default function Post({ postData }: any) {
         <meta name="description" content={postData.description} />
       </Head>
       <Layout>
-        <time className="post-time" dateTime="{{ date | htmlDateString }}">
+        <time className="post-time" dateTime={postData.date}>
           {postData.humanDate}
         </time>
 
         <h1>{postData.title}</h1>
-        <br />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </Layout>
     </>
