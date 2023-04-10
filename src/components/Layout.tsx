@@ -18,7 +18,8 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="mask-icon" href="favicon.svg" color="#000000" />
       </Head>
 
       <div className="header">
