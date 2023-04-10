@@ -22,8 +22,6 @@ export default function Home({ allPostsData }: HomePropsType) {
           name="description"
           content="Excellent home page of IT consultant working with web development"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
         <header className="introduction-block">

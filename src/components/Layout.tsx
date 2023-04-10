@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import clsx from "clsx";
+import Head from "next/head";
 
 type LayoutProps = {
   children: any;
@@ -15,6 +16,11 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <div className="header">
         <div className="header__content">
           <Link href="/" aria-label="Home" className="wrapper">
