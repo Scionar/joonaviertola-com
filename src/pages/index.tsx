@@ -25,7 +25,6 @@ export default function Home({ allPostsData }: HomePropsType) {
       </Head>
       <Layout>
         <header className="introduction-block">
-          <h1 className="introduction-block__name">Joona Viertola</h1>
           <div aria-hidden="true" className="introduction-block__photo"></div>
           <span className="introduction-block__content">
             <p>

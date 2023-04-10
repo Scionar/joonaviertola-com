@@ -152,36 +152,10 @@ a.wrapper:active {
 
 .main-navigation {
   display: inline-block;
-  position: relative;
-  z-index: 1;
 }
 
-.main-navigation ul {
-  background-color: var(--color-background);
-  border-radius: 2px;
-  border: 1px solid;
-  border-color: var(--color-border);
-  display: none;
-  font-size: 1rem;
-  padding: 1rem;
-  margin: 0;
-  position: absolute;
-  top: calc(100% - 1px);
-  right: 0;
-  list-style: none;
-  min-width: 16rem;
-  z-index: -1;
-}
-
-.main-navigation li {
-  display: block;
-  line-height: 5rem;
-  font-size: 1.6rem;
-}
-
-.main-navigation li a {
-  color: var(--color-text);
-  display: block;
+.main-navigation a {
+  margin: 0 0 0 1em;
 }
 
 /* Page */
@@ -208,55 +182,6 @@ footer {
 .logo {
   height: calc(var(--size-header-height) / 2);
   vertical-align: middle;
-}
-
-/* Navigation toggle */
-
-.navigation-toggle {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-
-  background-color: var(--color-background);
-  border: 1px solid transparent;
-  display: flex;
-  font-weight: 700;
-  height: 4rem;
-  border-radius: 0.4rem;
-  align-items: center;
-  justify-content: center;
-  width: 12rem;
-}
-
-/* .navigation-toggle:hover {
-  color: var(--color-primary-light);
-}
-
-.navigation-toggle:active {
-  color: var(--color-primary-dark);
-} */
-
-.navigation-toggle svg {
-  display: inline-block;
-  height: 3rem;
-  margin: 0 0 0 1rem;
-  width: 3rem;
-}
-
-.navigation-toggle.is-open {
-  border: 1px solid;
-  border-color: var(--color-border) var(--color-border) var(--color-background);
-  border-radius: 0.4rem 0.4rem 0 0;
-}
-
-.navigation-toggle.is-open ~ ul {
-  border-color: var(--color-border) var(var(--color-background));
-  border-radius: 2px 0 2px 2px;
-  display: block;
 }
 
 /* Publish date on post */

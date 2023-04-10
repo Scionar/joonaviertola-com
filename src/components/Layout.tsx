@@ -32,32 +32,8 @@ export default function Layout({ children }: LayoutProps) {
           </Link>
 
           <nav className="main-navigation" aria-label="Main">
-            <button
-              className={clsx({
-                ["navigation-toggle"]: true,
-                ["is-open"]: isMenuOpen,
-              })}
-              onClick={onMenuClickHandler}
-            >
-              Menu
-              <svg
-                fill="currentColor"
-                height="24"
-                viewBox="0 0 24 24"
-                width="24"
-              >
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-              </svg>
-            </button>
-            <ul>
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-            </ul>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
           </nav>
         </div>
       </div>
