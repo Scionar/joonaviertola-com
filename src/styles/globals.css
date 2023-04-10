@@ -49,7 +49,7 @@ body {
   font-family: "Fira Sans", system-ui, sans-serif;
   font-size: calc(1.2rem + 0.4vmin);
   line-height: 160%;
-  margin: calc(var(--size-header-height) + 6rem) 0 0;
+  margin: 2em 0 0;
 }
 
 /* Content styles */
@@ -116,15 +116,10 @@ a.wrapper:active {
 /* Header */
 
 .header {
-  background-color: var(--color-background);
-  border-bottom: 1px solid var(--color-border);
-
   padding: 0 var(--size-page-horizontal-margin);
-  position: fixed;
-  top: 0;
+  margin: 0 0 5em;
   width: 100%;
   height: var(--size-header-height);
-  z-index: 1;
 }
 
 .header__content {
@@ -158,6 +153,7 @@ a.wrapper:active {
 .main-navigation {
   display: inline-block;
   position: relative;
+  z-index: 1;
 }
 
 .main-navigation ul {
@@ -355,6 +351,7 @@ footer {
   flex: 1 0 auto;
   text-align: center;
   width: 100%;
+  margin: 0 0 2em;
 }
 
 .introduction-block__photo {
@@ -374,6 +371,10 @@ footer {
 }
 
 @media only screen and (min-width: 30em) {
+  body {
+    margin: 6em 0 0;
+  }
+
   .introduction-block__name {
     text-align: left;
   }
