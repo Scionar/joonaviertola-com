@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "@/components/Layout";
 import { getSinglePageData } from "@/lib/posts";
 
-export default function Home({ postData }: any) {
+export default function About({ postData }: any) {
   return (
     <>
       <Head>
