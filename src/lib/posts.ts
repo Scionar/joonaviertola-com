@@ -21,9 +21,18 @@ export function getSortedPostsData() {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
+    if (!matterResult.data.date) {
+      throw new Error(`Date metadata not set in ${id}.md file`);
+    }
+
+    const humanDate = DateTime.fromISO(matterResult.data.date, {
+      zone: "utc",
+    }).toFormat("yyyy LLL dd");
+
     // Combine the data with the id
     return {
       id,
+      humanDate,
       ...matterResult.data,
     };
   });
