@@ -1,8 +1,12 @@
 # About
 
-This website is meant to be a collection of my notes of complex subjects. It's easier to check out my own notes from here, forward it to my co-workers and advertise my knowledge.
+Front-end focused developer with praised organizing skills.
 
-I'm passionate website developer focused to JavaScript and NodeJS development. Last four years in business, I've been focusing into front-end development, but occasionally also been diving into fullstack working.
+I have **8 years professional experience of front-end development** with different size projects on multiple industries. In some projects I’ve been from the start and on some I’ve joined in the middle. This has given me experience on surviving in different situations and getting into projects really fast. 🚀
+
+**Design systems are my favorite projects**. Going deep into UX and accessibility with both developer and designer experience in mind, is a never ending learning process of cutting the perfect diamond. 💎
+
+In projects I’ve been responsible for both, a separate front-end app which communicates with an API or headless CMS. Always interested in keeping things simple and finding new stable tools to make work even more reliable.
 
 I'm located at [Finland](https://www.google.fi/maps/place/Suomi/data=!4m2!3m1!1s0x4681cadf4b32f6dd:0x146d63c75a810?sa=X&ved=0ahUKEwjo3-n75vnWAhWJYpoKHS-HDrgQ8gEIIzAA)'s capital [Helsinki](https://www.google.fi/maps/place/Helsinki/@60.1098664,24.7378275,10z/data=!3m1!4b1!4m13!1m7!3m6!1s0x4681cadf4b32f6dd:0x146d63c75a810!2sSuomi!3b1!8m2!3d61.92411!4d25.7481511!3m4!1s0x46920bc796210691:0xcd4ebd843be2f763!8m2!3d60.1688416!4d24.9389648).
 
