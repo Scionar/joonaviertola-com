@@ -1,6 +1,9 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { remark } from "remark";
+import html from "remark-html";
+import { DateTime } from "luxon";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -61,16 +64,29 @@ export function getAllPostIds() {
   });
 }
 
-export function getPostData(id: string) {
+export async function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
-  // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
 
-  // Combine the data with the id
+  const processedContent = await remark()
+    .use(html)
+    .process(matterResult.content);
+  const contentHtml = processedContent.toString();
+
+  if (!matterResult.data.date) {
+    throw new Error(`Date metadata not set in ${id}.md file`);
+  }
+
+  const humanDate = DateTime.fromISO(matterResult.data.date, {
+    zone: "utc",
+  }).toFormat("yyyy LLL dd");
+
   return {
     id,
+    contentHtml,
+    humanDate,
     ...matterResult.data,
   };
 }

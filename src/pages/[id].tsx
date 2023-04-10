@@ -4,11 +4,13 @@ import { getAllPostIds, getPostData } from "@/lib/posts";
 export default function Post({ postData }: any) {
   return (
     <Layout>
-      {postData.title}
+      <time className="post-time" dateTime="{{ date | htmlDateString }}">
+        {postData.humanDate}
+      </time>
+
+      <h1>{postData.title}</h1>
       <br />
-      {postData.id}
-      <br />
-      {postData.date}
+      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
   );
 }
@@ -28,7 +30,7 @@ type getStaticPropsType = {
 };
 
 export async function getStaticProps({ params }: getStaticPropsType) {
-  const postData = getPostData(params.id);
+  const postData = await getPostData(params.id);
 
   return {
     props: {
