@@ -6,7 +6,7 @@ import html from "remark-html";
 import { DateTime } from "luxon";
 
 const postsDirectory = path.join(process.cwd(), "posts");
-const singlePagesDirectory = path.join(process.cwd(), "pages");
+const singlePagesDirectory = path.join(process.cwd(), "special-pages");
 
 export function getSortedPostsData() {
   // Get file names under /posts
