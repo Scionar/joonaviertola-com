@@ -6,6 +6,7 @@ import html from "remark-html";
 import { DateTime } from "luxon";
 
 const postsDirectory = path.join(process.cwd(), "posts");
+const singlePagesDirectory = path.join(process.cwd(), "pages");
 
 export function getSortedPostsData() {
   // Get file names under /posts
@@ -96,6 +97,24 @@ export async function getPostData(id: string) {
     id,
     contentHtml,
     humanDate,
+    ...matterResult.data,
+  };
+}
+
+export async function getSinglePageData(id: string) {
+  const fullPath = path.join(singlePagesDirectory, `${id}.md`);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+
+  const matterResult = matter(fileContents);
+
+  const processedContent = await remark()
+    .use(html)
+    .process(matterResult.content);
+  const contentHtml = processedContent.toString();
+
+  return {
+    id,
+    contentHtml,
     ...matterResult.data,
   };
 }
