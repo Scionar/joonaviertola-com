@@ -57,7 +57,11 @@ body {
 h1 {
   font-size: 1.8em;
   line-height: 1.25;
-  margin: 2em 0 2em;
+  margin: 2em 0;
+}
+
+.post-time ~ h1 {
+  margin: 0 0 2em;
 }
 
 h2 {
@@ -189,7 +193,7 @@ footer {
 .post-time {
   color: var(--color-text-secondary);
   display: block;
-  margin: 5rem 0;
+  margin: 5rem 0 0;
 }
 
 /* Social media */
