@@ -1,7 +1,9 @@
 import Head from "next/head";
+import Image from "next/image";
 import Layout from "@/components/Layout";
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
+import profilePic from "@/assets/me.png";
 
 type HomePropsType = {
   allPostsData: {
@@ -25,7 +27,13 @@ export default function Home({ allPostsData }: HomePropsType) {
       </Head>
       <Layout>
         <header className="introduction-block">
-          <div aria-hidden="true" className="introduction-block__photo"></div>
+          <Image
+            className="introduction-block__photo"
+            src={profilePic}
+            alt="Picture of the author"
+            width={170}
+            height={170}
+          />
           <span className="introduction-block__content">
             <p>
               I live in Helsinki, Finland. I’m a problem solver at heart. I’m
