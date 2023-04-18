@@ -1,14 +1,5 @@
-/*
- * Tool used for defining colors
- * https://material.io/resources/color/
- */
-
 :root {
-  --color-primary: #ff7043;
-  --color-primary-light: #ffa270;
-  --color-primary-dark: #c63f17;
-
-  --color-border: #d0d2d2;
+  --color-link: #096bda;
 
   --color-text: #151515;
   --color-text-secondary: #767777;
@@ -22,15 +13,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #ff7043;
-    --color-primary-light: #ffa270;
-    --color-primary-dark: #c63f17;
-
-    --color-border: #979898;
+    --color-link: #2189ff;
 
     --color-text: #f0f0f0;
     --color-text-secondary: #8d8e8e;
-    --color-background: #1a1a1a;
+    --color-background: #292929;
     --color-code-background: #414a58;
   }
 }
@@ -96,17 +83,11 @@ article ol li {
 
 /* Link */
 
-a:link {
-  color: var(--color-primary);
-}
-a:visited {
-  color: var(--color-primary-dark);
-}
-a:hover {
-  color: var(--color-primary-light);
-}
+a:link,
+a:visited,
+a:hover,
 a:active {
-  color: var(--color-primary-light);
+  color: var(--color-link);
 }
 
 a.wrapper:link,
@@ -240,7 +221,7 @@ footer {
   display: inline-block;
   content: "";
   position: absolute;
-  background-color: var(--color-primary);
+  background-color: var(--color-link);
   width: 0.7rem;
   left: 0rem;
   top: 2rem;
