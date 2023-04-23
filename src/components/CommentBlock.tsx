@@ -11,7 +11,10 @@ export default function CommentBlock({}: CommentBlockProps) {
 
   return (
     <>
-      <section className="comment-section" id="disqus_thread"></section>
+      <section className="comment-section">
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+      </section>
 
       <Script id="disqus" strategy="lazyOnload">
         {`
