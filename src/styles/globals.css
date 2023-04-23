@@ -4,6 +4,7 @@
   --color-text: #151515;
   --color-text-secondary: #767777;
   --color-background: #ffffff;
+  --color-background-secondary: #ededed;
   --color-code-background: #f1f4f8;
 
   --size-max-content-width: 75rem;
@@ -18,6 +19,7 @@
     --color-text: #f0f0f0;
     --color-text-secondary: #8d8e8e;
     --color-background: #292929;
+    --color-background-secondary: #3a3a3a;
     --color-code-background: #414a58;
   }
 }
@@ -290,7 +292,7 @@ footer {
 }
 
 .comment-section__consent-block {
-  background-color: #e9e9e9;
+  background-color: var(--color-background-secondary);
   border-radius: 0.5rem;
   display: block;
   padding: 4rem 2rem;
