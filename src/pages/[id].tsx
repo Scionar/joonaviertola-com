@@ -1,6 +1,8 @@
 import Layout from "@/components/Layout";
+import CommentBlock from "@/components/CommentBlock";
 import { getAllPostIds, getPostData } from "@/lib/posts";
 import Head from "next/head";
+import Script from "next/script";
 
 export default function Post({ postData }: any) {
   return (
@@ -16,6 +18,8 @@ export default function Post({ postData }: any) {
 
         <h1>{postData.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
+        <CommentBlock />
       </Layout>
     </>
   );
