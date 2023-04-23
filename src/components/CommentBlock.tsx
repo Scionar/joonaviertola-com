@@ -37,7 +37,14 @@ export default function CommentBlock({}: CommentBlockProps) {
             var button = document.getElementById('showCommentsButton');
             var consentBlock = document.getElementById('consentBlock');
 
+            const consent = localStorage.getItem('consent');
+            if (consent === 'true') {
+                triggerDisqus();
+                hideConsentBlock();
+            }
+
             button.addEventListener('click', function() {
+                localStorage.setItem('consent', 'true');
                 triggerDisqus();
                 hideConsentBlock();
             }, false);
