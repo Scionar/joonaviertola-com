@@ -10,7 +10,7 @@ In projects I’ve been responsible for both, a separate front-end app which com
 
 I'm located at [Finland](https://www.google.fi/maps/place/Suomi/data=!4m2!3m1!1s0x4681cadf4b32f6dd:0x146d63c75a810?sa=X&ved=0ahUKEwjo3-n75vnWAhWJYpoKHS-HDrgQ8gEIIzAA)'s capital [Helsinki](https://www.google.fi/maps/place/Helsinki/@60.1098664,24.7378275,10z/data=!3m1!4b1!4m13!1m7!3m6!1s0x4681cadf4b32f6dd:0x146d63c75a810!2sSuomi!3b1!8m2!3d61.92411!4d25.7481511!3m4!1s0x46920bc796210691:0xcd4ebd843be2f763!8m2!3d60.1688416!4d24.9389648).
 
-### Experience
+## Experience
 
 - Houston Inc. - Senior Consultant
   Feb 2020 - Present
@@ -25,7 +25,7 @@ I'm located at [Finland](https://www.google.fi/maps/place/Suomi/data=!4m2!3m1!1s
 - Web developer - Academic Work Finland
   Jan 2015 - Jun 2015
 
-### Education
+## Education
 
 - HAAGA-HELIA University of Applied Sciences
   Bachelor of Business Administration (BBA)
@@ -34,7 +34,7 @@ I'm located at [Finland](https://www.google.fi/maps/place/Suomi/data=!4m2!3m1!1s
   Associate’s Degree / Information Technology
   2008-2011
 
-### Certifications
+## Certifications
 
 - Certified Scrum Master
   ScrumAlliance
