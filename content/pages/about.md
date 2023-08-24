@@ -12,8 +12,10 @@ I'm located at [Finland](https://www.google.fi/maps/place/Suomi/data=!4m2!3m1!1s
 
 ## Experience
 
+- SOK - Senior Engineer
+  Aug 2023 - Present
 - Houston Inc. - Senior Consultant
-  Feb 2020 - Present
+  Feb 2020 - Jul 2023
 - Houston Inc. - Consultant
   Mar 2018 - Jan 2020
 - Houston Inc. - Consultant Trainee
