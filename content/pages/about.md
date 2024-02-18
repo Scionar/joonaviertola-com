@@ -1,4 +1,6 @@
-# About
+---
+title: "About"
+---
 
 Front-end focused developer with praised organizing skills.
 
