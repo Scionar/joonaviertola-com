@@ -95,3 +95,29 @@ export async function getPostBySlug(slug: string) {
     ...matterResult.data,
   };
 }
+
+export function getMetadataBySlug(slug: string) {
+  let fullPath = "";
+
+  if (fs.existsSync(path.join(singlePagesDirectory, `${slug}.md`))) {
+    fullPath = path.join(singlePagesDirectory, `${slug}.md`);
+  }
+
+  if (fs.existsSync(path.join(postsDirectory, `${slug}.md`))) {
+    fullPath = path.join(postsDirectory, `${slug}.md`);
+  }
+
+  if (!fullPath) {
+    throw Error(`Slug ${slug} coud not be found`);
+  }
+
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+
+  const matterResult = matter(fileContents);
+
+  return {
+    slug,
+    title: matterResult.data.title,
+    descrition: matterResult.data.description,
+  };
+}

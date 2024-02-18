@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
-import { getAllSlugs, getPostBySlug } from "@/lib/posts";
+import { getAllSlugs, getMetadataBySlug, getPostBySlug } from "@/lib/posts";
+import { Metadata } from "next";
 
 export default async function Post({ params }: Params) {
   const post = await getPostBySlug(params.slug);
@@ -28,22 +29,15 @@ type Params = {
   };
 };
 
-// export function generateMetadata({ params }: Params): Metadata {
-//   const post = await getPostBySlug(params.slug);
+export function generateMetadata({ params }: Params): Metadata {
+  const post = getMetadataBySlug(params.slug);
 
-//   if (!post) {
-//     return notFound();
-//   }
+  const title = post.title ? post.title : "Joona Viertola";
 
-//   const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
-
-//   return {
-//     openGraph: {
-//       title,
-//       images: [post.ogImage.url],
-//     },
-//   };
-// }
+  return {
+    title,
+  };
+}
 
 export async function generateStaticParams() {
   const posts = getAllSlugs();
