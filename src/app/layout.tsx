@@ -40,9 +40,11 @@ export default function RootLayout({
           </div>
         </div>
 
-        <main className="page">
-          <article>{children}</article>
-        </main>
+        <div className="page-margins">
+          <main className="page">
+            <article>{children}</article>
+          </main>
+        </div>
 
         <footer>
           Joona Viertola &copy; {new Date().getFullYear()}
