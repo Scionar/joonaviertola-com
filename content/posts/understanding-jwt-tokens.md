@@ -1,10 +1,8 @@
 ---
 title: "Understanding the Structure of a JWT Token with Examples"
-description: "JSON Web Tokens (JWTs) are a widely used standard for securely transmitting information between parties as a JSON object."
+description: "JSON Web Tokens (JWTs), widely used standard for securely transmitting information between parties."
 date: "2024-01-24"
 ---
-
-# Understanding the Structure of a JWT Token with Examples
 
 JSON Web Tokens (JWTs) are a widely used standard for securely transmitting information between parties as a JSON object. They are compact, URL-safe, and allow for authentication and data exchange. In this article, we will dive into the structure of a JWT token, its components, and examples to illustrate how it works.
 
