@@ -135,8 +135,3 @@ To verify a token, use the same algorithm and secret or public key that was used
 - **Compact:** The tokens are small and can be easily sent via URLs, headers, or POST bodies.
 - **Self-contained:** JWTs contain all the necessary information about the user or session.
 - **Secure:** When used correctly, JWTs provide a robust mechanism for authentication and data exchange.
-
-## Conclusion
-
-JWT tokens are an essential part of modern web development, especially for stateless authentication systems. Understanding their structure—header, payload, and signature—is key to effectively using and verifying them. By leveraging libraries and following best practices, you can securely integrate JWTs into your applications.
-
