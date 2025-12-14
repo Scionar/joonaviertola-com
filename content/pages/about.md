@@ -2,9 +2,9 @@
 title: "About"
 ---
 
-Front-end focused developer with praised organizing skills.
+I'm full-stack developer with praised organizing skills.
 
-I have **8 years professional experience of front-end development** with different size projects on multiple industries. In some projects I’ve been from the start and on some I’ve joined in the middle. This has given me experience on surviving in different situations and getting into projects really fast. 🚀
+I have **over 10 years professional experience of full-stack development** with different size projects on multiple industries. In some projects I’ve been from the start and on some I’ve joined in the middle. This has given me experience on surviving in different situations and get into really fast. 🚀
 
 **Design systems are my favorite projects**. Going deep into UX and accessibility with both developer and designer experience in mind, is a never ending learning process of cutting the perfect diamond. 💎
 
