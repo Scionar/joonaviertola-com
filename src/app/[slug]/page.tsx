@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import { getAllSlugs, getMetadataBySlug, getPostBySlug } from "@/lib/posts";
 import { Metadata } from "next";
 
-export default async function Post({ params }: Params) {
+export default async function Post(props: Params) {
+  const params = await props.params;
   const post = await getPostBySlug(params.slug);
 
   if (!post) {
@@ -24,12 +25,13 @@ export default async function Post({ params }: Params) {
 }
 
 type Params = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export function generateMetadata({ params }: Params): Metadata {
+export async function generateMetadata(props: Params): Promise<Metadata> {
+  const params = await props.params;
   const post = getMetadataBySlug(params.slug);
 
   const title = post.title ? post.title : "Joona Viertola";
